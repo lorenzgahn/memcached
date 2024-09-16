@@ -1,12 +1,6 @@
-
-### HACK
-import sys
-
-sys.path.append("/Users/lorenzgahn/Repositories/Memcached")
-##### 
-
 import time
-from hash_table import HashTable, Command, Response 
+
+from memcached.hash_table import HashTable, Command, Response 
 
 
 

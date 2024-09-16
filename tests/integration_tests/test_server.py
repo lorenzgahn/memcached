@@ -7,14 +7,14 @@ import pytest
 import os 
 from contextlib import contextmanager
 
-from server import ThreadedServer, DEFAULT_HOST, DEFAULT_PORT
+from memcached.server import DEFAULT_HOST, DEFAULT_PORT
 
 
 @pytest.fixture(scope="session")
 def server_process():
     current_dir = os.path.dirname(__file__)
-    src_path = os.path.join(current_dir, '..', '..', "memcached")
-    server_script = os.path.join(src_path, "server.py")
+    src_path = os.path.join(current_dir, '..', '..')
+    server_script = os.path.join(src_path, "main.py")
     process = subprocess.Popen(
         ["python", server_script, f"--port={DEFAULT_PORT}", f"--host={DEFAULT_HOST}"])
     time.sleep(0.2)

@@ -1,6 +1,6 @@
 import threading 
 from datetime import datetime 
-from hash_table import HashTable, Command, Response
+from memcached.hash_table import HashTable, Command, Response
 
 
 hash_table_lock = threading.Lock()

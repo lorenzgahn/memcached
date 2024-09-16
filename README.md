@@ -6,7 +6,7 @@ This is an implementation of the Memcached server, as described by John Crickett
 
 From the root of the repository, the server can be run locally as follows. Each command line argument takes on default values, so the server can be run without arguments.  
 
-python memcached.server.py --host {host} --port {port} --max_threads {max_threads}  
+python main.py --host {host} --port {port} --max_threads {max_threads}  
 
 
 There are several unit and integration tests for the server, message processing, and data structure. To run, simply run pytest from the repo root. Additional configuration can be placed in pytest.ini file.   

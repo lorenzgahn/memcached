@@ -42,4 +42,4 @@ COPY . .
 EXPOSE 11211
 
 # Run the application.
-CMD python memcached/server.py 
+CMD python main.py 
